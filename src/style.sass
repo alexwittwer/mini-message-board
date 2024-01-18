@@ -1,0 +1,77 @@
+body
+    color: #ece7e7
+    background-color: #344352
+    font: 30px "Lucida Grande", Helvetica, Arial, sans-serif
+    max-width: 100vw
+main
+    display: flex
+    flex-flow: column nowrap
+    justify-content: center
+    align-items: center
+    gap: 8px
+    .link
+        display: block
+        max-width: 12ch
+        color: #ece7e7
+        background-color: #0d7280
+        padding: 1ch
+        text-decoration: none
+        border-radius: 4px
+        margin-top: 12px
+        text-align: center
+        box-shadow: 4px 4px 0px black
+        &:hover
+            transform: scale(1.05)
+
+.chat
+    display: grid
+    min-width: 75%
+    gap: 12px
+    .message
+        flex: 0
+        font-size: 24px
+        background-color: #ece7e7
+        color: #111111
+        box-shadow: 4px 4px 0px black
+        padding: 1ch
+        .date
+            font-size: .9rem
+            text-align: end
+        .user
+            font-weight: bold
+
+form
+    display: flex
+    flex-flow: column nowrap
+    max-width: 60ch
+    gap: 16px
+    font-size: 32px
+    p
+        text-align: center
+    textarea
+        padding: 12px
+        resize: none
+        border-radius: 4px
+        box-shadow: 5px 5px 0px black
+    input
+        padding: 6px
+        max-width: 12ch
+        border-radius: 4px
+        box-shadow: 5px 5px 0px black
+    button
+        display: block
+        max-width: 12ch
+        color: #ece7e7
+        background-color: #0d7280
+        padding: 1ch
+        text-decoration: none
+        border-radius: 12px
+        margin-top: 12px
+        text-align: center
+        transition: 250ms
+        border-style: none
+        font: 24px "Lucida Grande", Helvetica, Arial, sans-serif
+        align-self: center
+        box-shadow: 4px 4px 0px black
+        &:hover
+            transform: scale(1.05)

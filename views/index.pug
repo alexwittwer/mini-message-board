@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  main 
+    h1= title
+    .chat 
+      each mes in messages
+        .message
+          p.user #{mes.user}
+          p.comment= mes.text 
+          p.date= mes.added
+    a.link(href="/new") Add a comment
+
+

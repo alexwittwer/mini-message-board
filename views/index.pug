@@ -4,11 +4,14 @@ block content
   main 
     h1= title
     .chat 
-      each mes in messages
-        .message
-          p.user #{mes.user}
-          p.comment= mes.text 
-          p.date= mes.added
+      if messages.length
+        each mes in messages
+          .message
+            p.user #{mes.user}
+            p.comment= mes.text 
+            p.date= mes.added
+      else 
+        p No messages
     a.link(href="/new") Add a comment
 
 

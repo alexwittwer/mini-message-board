@@ -13,6 +13,7 @@ const mongoDB = process.env.MONGODB_URI;
 
 try {
   console.log("Attempting to connect to MongoDB...");
+  console.log("current key: " + mongoDB)
   main();
 } catch (err) {
   console.log("An error occured");

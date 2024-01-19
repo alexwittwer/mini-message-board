@@ -5,6 +5,11 @@ body {
   max-width: 100vw;
 }
 
+h1 {
+  padding: 0;
+  margin-block: 16px;
+}
+
 main {
   display: flex;
   flex-flow: column nowrap;
@@ -30,8 +35,26 @@ main .link:hover {
 
 .chat {
   display: grid;
-  min-width: 75%;
+  margin-inline: 1ch;
   gap: 12px;
+  min-width: 75%;
+  max-height: 68vh;
+  overflow-y: auto;
+}
+.chat::-webkit-scrollbar {
+  width: 0.3em;
+  height: 0.3em;
+}
+.chat::-webkit-scrollbar-thumb {
+  background: #454752;
+  border-radius: 10px;
+}
+.chat::-webkit-scrollbar-track {
+  background: #a2a3a9;
+}
+.chat {
+  scrollbar-face-color: #454752;
+  scrollbar-track-color: #a2a3a9;
 }
 .chat .message {
   flex: 0;
@@ -89,6 +112,14 @@ form button {
 }
 form button:hover {
   transform: scale(1.05);
+}
+
+.chat {
+  max-width: 80%;
+}
+
+h1 {
+  font-size: 48px;
 }
 
 /*# sourceMappingURL=style.css.map */

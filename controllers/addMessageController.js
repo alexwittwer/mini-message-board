@@ -7,7 +7,7 @@ exports.new_messages = asyncHandler(async (req, res, next) => {
   if (!req.body.user){
     req.body.user = 'Anonymous'
   }
-  req.body.date = DateTime.now()
+  req.body.added = DateTime.now()
     .setZone("America/New_York")
     .toLocaleString(DateTime.DATETIME_MED);
   const newMessage = await Message.create(req.body);
